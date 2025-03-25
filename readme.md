@@ -74,8 +74,12 @@ The color scheme can be easily modified by editing the CSS variables in the `:ro
   --black: #000000;
   --dark-gray: #404040;
   --light-gray: #c4c4c4;
-  --red: #ff3c00;
-  --red-light: #ff5533;
+  --dark-olive: #181c14;
+  --gray-olive: #3c3d37;
+  --sage-green: #697565;
+  --light-beige: #ecdfcc;
+  --white: #ffffff;
+  --bg-color: #fafafa;
   /* Add or modify colors here */
 }
 ```
