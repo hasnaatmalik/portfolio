@@ -4,34 +4,37 @@
   --black: #000000;
   --dark-gray: #404040;
   --light-gray: #c4c4c4;
-  --red: #ff3c00;
-  --red-light: #ff5533;
+  --dark-olive: #181c14;
+  --gray-olive: #3c3d37;
+  --sage-green: #697565;
+  --light-beige: #ecdfcc;
   --white: #ffffff;
   --bg-color: #fafafa;
-  --text-color: var(--dark-gray);
-  --heading-color: var(--black);
-  --primary-color: var(--red);
-  --secondary-color: var(--red-light);
+  --text-color: var(--gray-olive);
+  --heading-color: var(--dark-olive);
+  --primary-color: var(--sage-green);
+  --secondary-color: var(--gray-olive);
+  --accent-color: var(--light-beige);
   --card-bg: var(--white);
   --header-bg: rgba(255, 255, 255, 0.95);
   --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --footer-bg: var(--dark-gray);
-  --footer-text: var(--white);
+  --footer-bg: var(--dark-olive);
+  --footer-text: var(--light-beige);
   --input-border: var(--light-gray);
   --transition: all 0.3s ease;
 }
 
 /* Dark Mode Colors */
 html.dark-mode {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
+  --bg-color: #181c14;
+  --text-color: #ecdfcc;
   --heading-color: #ffffff;
-  --card-bg: #1e1e1e;
-  --header-bg: rgba(30, 30, 30, 0.95);
+  --card-bg: #3c3d37;
+  --header-bg: rgba(24, 28, 20, 0.95);
   --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  --footer-bg: #1a1a1a;
-  --footer-text: #e0e0e0;
-  --input-border: #333333;
+  --footer-bg: #181c14;
+  --footer-text: #ecdfcc;
+  --input-border: #697565;
 }
 
 * {
@@ -129,8 +132,8 @@ img {
 }
 
 .project-btn {
-  background-color: var(--dark-gray);
-  color: var(--white);
+  background-color: var(--dark-olive);
+  color: var(--light-beige);
   padding: 8px 16px;
   font-size: 0.9rem;
 }
@@ -193,7 +196,7 @@ nav {
 .logo-dot {
   width: 6px;
   height: 6px;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   border-radius: 50%;
   position: absolute;
   transition: transform 0.5s ease, background-color 0.3s ease;
@@ -227,7 +230,7 @@ nav {
   justify-content: space-between;
   width: 60px;
   height: 30px;
-  background-color: #343434;
+  background-color: var(--dark-olive);
   border-radius: 50px;
   position: relative;
   padding: 5px;
@@ -236,7 +239,7 @@ nav {
 }
 
 .theme-toggle-label .fa-sun {
-  color: #f1c40f;
+  color: var(--light-beige);
   font-size: 14px;
 }
 
@@ -267,7 +270,7 @@ nav {
 }
 
 #theme-toggle-checkbox:checked + .theme-toggle-label {
-  background-color: #2c3e50;
+  background-color: var(--gray-olive);
 }
 
 .nav-links {
@@ -503,8 +506,8 @@ nav {
 }
 
 .skill-tags span {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: var(--sage-green);
+  color: var(--light-beige);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -512,8 +515,8 @@ nav {
 }
 
 .skill-tags span:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: var(--gray-olive);
+  color: var(--light-beige);
   transform: translateY(-3px);
 }
 
@@ -569,8 +572,8 @@ nav {
 }
 
 .project-tags span {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: var(--sage-green);
+  color: var(--light-beige);
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -654,7 +657,7 @@ nav {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(255, 60, 0, 0.2);
+  box-shadow: 0 0 0 2px rgba(105, 117, 101, 0.2);
 }
 
 /* Footer */
@@ -682,7 +685,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
   transform: translateY(-3px);
 }
 
@@ -839,18 +842,24 @@ footer {
 
 /* Dark mode specific adjustments */
 html.dark-mode .skill-tags span {
-  background-color: #333;
-  color: #e0e0e0;
+  background-color: var(--sage-green);
+  color: var(--light-beige);
 }
 
 html.dark-mode .project-tags span {
-  background-color: #333;
-  color: #e0e0e0;
+  background-color: var(--sage-green);
+  color: var(--light-beige);
+}
+
+html.dark-mode .skill-tags span:hover,
+html.dark-mode .project-tags span:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-olive);
 }
 
 html.dark-mode .form-group input,
 html.dark-mode .form-group textarea {
-  border-color: #444;
+  border-color: var(--sage-green);
 }
 
 @media (max-width: 380px) {
