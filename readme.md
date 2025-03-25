@@ -40,6 +40,9 @@ portfolio/
 ├── js/
 │   └── main.js             # JavaScript functionality
 ├── images/
+│   └── projects/
+│       ├── project1.jpg
+│       └── project2.jpg
 │   ├── profile.jpeg        # Profile image
 │   ├── preview.png         # Project preview image
 └── README.md               # Project documentation
