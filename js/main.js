@@ -1,4 +1,3 @@
-// DOM Elements
 const header = document.querySelector("header");
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -17,7 +16,6 @@ if (savedTheme) {
     themeToggle.checked = true;
   }
 } else {
-  // Check if user prefers dark mode
   const prefersDarkMode = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
