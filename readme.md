@@ -104,7 +104,7 @@ To add a new project, copy and modify the existing project card structure in the
 
 ## Live Demo
 
-[View the live portfolio](https://yourusername.github.io/portfolio/)
+[View the live portfolio](https://hasnaatmalik.github.io/portfolio/)
 
 ## Author & Contact
 
