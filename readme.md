@@ -34,6 +34,8 @@
 
 ```
 portfolio/
+├── assets/
+    └── cv.pdf              # cv
 ├── index.html              # Main HTML file
 ├── css/
 │   └── style.css           # All styles
@@ -41,7 +43,7 @@ portfolio/
 │   └── main.js             # JavaScript functionality
 ├── images/
 │   └── projects/
-│       ├── project1.jpg
+│       ├── project1.jpg    # project image
 │       └── project2.jpg
 │   ├── profile.jpeg        # Profile image
 │   ├── preview.png         # Project preview image
